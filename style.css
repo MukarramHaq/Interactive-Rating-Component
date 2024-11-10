@@ -7,3 +7,91 @@
 * {
   margin: 0;
 }
+
+:root {
+  /* Primary */
+  --pr-orange: hsl(25, 97%, 53%);
+
+  /* Neutral */
+  --nt-white: hsl(0, 0%, 100%);
+  --nt-light-grey: hsl(217, 12%, 63%);
+  --nt-dark-blue: hsl(213, 19%, 18%);
+  --nt-very-dark-blue: hsl(216, 12%, 8%);
+
+  /* Font Weight */
+  --fw-400: 400;
+  --fw-700: 700;
+}
+
+body {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100svh;
+  color: var(--nt-white);
+  font-family: Overpass, sans-serif;
+  background: var(--nt-very-dark-blue);
+}
+
+.card {
+  background-color: var(--nt-dark-blue);
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+
+/* Got it from stackover flow. Create a div and put the image as the background. */
+.star {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: var(--nt-very-dark-blue);
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  background-image: url(/images/icon-star.svg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  margin-bottom: 1rem;
+}
+
+h1{
+  margin-bottom: 0.625rem;
+  font-size: 1.5rem;
+}
+
+p{
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--nt-light-grey);
+  margin-bottom: 1.5rem;
+}
+
+.rating-buttons-div{
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid white; */
+}
+
+.rating-button{
+  width: 2.625rem;
+  height: 2.625rem;
+  border-radius: 100%;
+  border: none;
+  background: hsl(213, 18%, 10%);
+  color: var(--nt-light-grey);
+  font-weight: var(--fw-700);
+  margin-bottom: 1.5rem;
+}
+
+.submit-btn{
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 2rem;
+  background-color: var(--pr-orange);
+  border: none;
+  font-weight: 600;
+  color: var(--nt-very-dark-blue);
+  letter-spacing: 0.2rem;
+}
