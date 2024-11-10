@@ -40,7 +40,6 @@ body {
   border-radius: 1rem;
 }
 
-
 /* Got it from stackover flow. Create a div and put the image as the background. */
 .star {
   display: block;
@@ -55,27 +54,30 @@ body {
   margin-bottom: 1rem;
 }
 
-h1{
+h1 {
   margin-bottom: 0.625rem;
   font-size: 1.5rem;
 }
 
-p{
+p {
   font-size: 0.875rem;
   line-height: 1.5;
   color: var(--nt-light-grey);
   margin-bottom: 1.5rem;
 }
 
-.rating-buttons-div{
-  display: flex;
-  justify-content: space-between;
+.rating-buttons-div {
+  /* display: flex;
+  justify-content: space-between; */
   /* border: 1px solid white; */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
 }
 
-.rating-button{
-  width: 2.625rem;
-  height: 2.625rem;
+.rating-button {
+  width: 3.125rem;
+  height: 3.125rem;
   border-radius: 100%;
   border: none;
   background: hsl(213, 18%, 10%);
@@ -84,7 +86,13 @@ p{
   margin-bottom: 1.5rem;
 }
 
-.submit-btn{
+.rating-button:hover{
+  background-color: var(--nt-white);
+  color: #262E38;
+  cursor: pointer;
+}
+
+.submit-btn {
   width: 100%;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -95,3 +103,24 @@ p{
   color: var(--nt-very-dark-blue);
   letter-spacing: 0.2rem;
 }
+
+.submit-btn:hover{
+  background-color: var(--nt-white);
+  color: #262E38;
+  cursor: pointer;
+}
+
+@media (min-width: 26rem) {
+  .card {
+    max-width: 26rem;
+    padding: 2rem;
+  }
+}
+
+/***************** 
+
+1. Add JS file
+2. Use the content-fit property, research about that
+   and see how that works.
+
+*****************/
