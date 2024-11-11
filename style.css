@@ -34,7 +34,7 @@ body {
   background: var(--nt-very-dark-blue);
 }
 
-.card {
+.rating-card {
   background-color: var(--nt-dark-blue);
   padding: 1.5rem;
   border-radius: 1rem;
@@ -110,8 +110,13 @@ p {
   cursor: pointer;
 }
 
+.active{
+  background-color: var(--pr-orange);
+  color: #262E38
+}
+
 @media (min-width: 26rem) {
-  .card {
+  .rating-card {
     max-width: 26rem;
     padding: 2rem;
   }

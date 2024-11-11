@@ -34,11 +34,12 @@ body {
   background: var(--nt-very-dark-blue);
 }
 
-.card {
+.thanks-card {
   background-color: #181e27;
   padding: 1.5rem;
   border-radius: 1rem;
   text-align: center;
+  display: none;
 }
 
 img {
@@ -72,7 +73,7 @@ h1 {
 }
 
 @media (min-width: 26rem) {
-  .card {
+  .thanks-card {
     max-width: 26rem;
     padding: 2rem;
   }
